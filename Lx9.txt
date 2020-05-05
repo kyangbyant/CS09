@@ -1,0 +1,73 @@
+C＃企业级开发技术练习9答题卡
+
+班级：信息管理一班
+姓名：陈正阳
+学号：20190307139
+
+*注：排除答案放置在序号下方。* /
+
+（一）
+使用系统；
+使用System.Collections.Generic;
+命名空间ConsoleApp1
+{
+    班级计划
+    {
+        静态void Main（string [] args）
+        {
+            字典<int，字符串>课程=新字典<int，字符串>（）
+            {
+                [5331034] =“ javascript”，
+                [5331095] =“ linux”，
+                [5331019] =“ PHP”
+            };
+            整数ID = 5331034; 字符串s = $“键{id}”;
+            如果（！courses.ContainsKey（id））
+                Console.WriteLine（$“ {s}不存在，下面添加”）;
+            其他
+            {
+                Console.WriteLine（$“ {id}对应的数量{courses [id]}，下面修改”）;
+            }
+            的课程[5331034] =“ html5”;
+                         Console.WriteLine（“结果如下”）;
+            foreach（课程中的var c）
+            {
+                Console.WriteLine（$“键：{c.Key}，值：{c.Value}”））;
+            }
+        }
+    }
+}
+
+
+（二）
+
+使用系统；
+使用System.Collections.Generic;
+命名空间ConsoleApp2
+{
+    NumString类
+    {
+        字符串_num =“ 123”;
+        公共字符这[int i]
+        {
+            组
+            {
+                _num = _num.PadRight（i + 1，'0'）;
+                _num = _num.Insert（i，value.ToString（））;
+                _num = _num.Remove（i + 1，1）;
+            }
+        }
+        公共无效outAll（）=> Console.WriteLine（_num）;
+    }
+    班级计划
+    {
+        静态void Main（string [] args）
+        {
+            NumString ns =新的NumString（）;
+            ns [5] ='2';
+            ns [2] ='5';
+            ns.outAll（）;
+
+        }
+    }
+}
